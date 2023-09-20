@@ -14,4 +14,34 @@ body {
 .card {
     display: flex;
     flex-direction: column;
+    height: 300px;
+    width: 400px;
+    min-width: 250px;
+
+    background: #14171D;
+    box-shadow: -1rem 0 2rem #000;
+    border-radius: 1rem;
+}
+
+.card:hover{
+    transform: translateY(-1rem);
+}
+
+.card:hover~.card{
+    transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+    margin-left: -120px;
+}
+
+.card-image {
+    width: auto;
+    height: auto;
+
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-header {
+    padding: 0 1rem 1rem 1rem;
 }
